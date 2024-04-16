@@ -1,0 +1,29 @@
+[33mcommit 34157a913f7a37b3839797fc068fa5be04e04ad4[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: VitaliyBondar <ipz234_bvo@student.ztu.edu.ua>
+Date:   Tue Apr 16 22:21:19 2024 +0300
+
+    Cайт на разі тільки зі змогою додавати рецензії та показувати на екрані
+
+[33mcommit 901f7e6e20c8e2013dfb1b5bb8338eb3701beb0a[m
+Author: VitaliyBondar <ipz234_bvo@student.ztu.edu.ua>
+Date:   Tue Apr 16 22:13:37 2024 +0300
+
+    Added some new changes(like a access to add review;beautiful design and you can see all reviews
+
+[33mcommit 0e4b174c40f65e456988a0e79f2804a26b8fbe96[m
+Author: VitaliyBondar <ipz234_bvo@student.ztu.edu.ua>
+Date:   Tue Apr 16 22:11:34 2024 +0300
+
+    2-Додана можливість додавати рецензії в базу даних + відображення на сайті та зовнішний вигляд
+
+[33mcommit df6f580805f945d55c323c61cb1faeaa5212a24b[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: VitaliyBondar <ipz234_bvo@student.ztu.edu.ua>
+Date:   Fri Mar 29 21:02:56 2024 +0200
+
+    1-Початок курсової роботи(створення основи)
+
+[33mcommit aaaabdae7e93784e63fa2795c5bba58e81895c6e[m
+Author: bondarV <147072539+bondarV@users.noreply.github.com>
+Date:   Fri Mar 29 20:41:46 2024 +0200
+
+    Initial commit

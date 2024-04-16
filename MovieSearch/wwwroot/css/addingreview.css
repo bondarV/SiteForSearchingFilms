@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.gray-color{
+    background-color:gray;
+}
+.add-review{
+    height: 500px;
+}
+.border-gray{
+ border-color:gray;   
+}
+.down-below{
+    transition: 10s all ease-in-out;
+}
+select:active .down-below{
+    transform:translateY(-5px);
+}
