@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="css/addingreview.css"/>
+@model Review
+<form method="post">
+    <div class="border p-4 mt-4">
+        <div class="row border-bottom border-5 border- p-3 mb-4 d-flex align-items-center">
+            <h2 class="col-6">Додати огляд</h2>
+            <div class="col-6 col-md-6 text-md-end text-center">
+                <a asp-controller="Review" asp-action="Index" class="btn btn-outline-secondary">Повернутися до опису фільму</a>
+            </div>
+        </div>  
+        <div class="row mb-4">
+            <h2 class="col-12 text-primary">Твоя рецензія</h2>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12">
+                <input type="text" name="headline" id="headline" required="required" class="form-control" placeholder="Напиши коротесеньку назву, яка якнайкраще описуватиме твою рецензію">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12">
+                <textarea asp-for="TextReview" required="required" class="form-control" rows="5px" placeholder="Розмісти у межах діапазону рецензію на обраний фільм"></textarea>
+                      </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-6">
+                <label asp-for="SpoilersConsist" class="form-label"></label>
+              <select required="required" class="form-select" asp-for="SpoilersConsist">
+                  <option selected disabled hidden value="">Будь ласка обирайте</option>
+                  <option value="False">Так</option>
+                  <option value="True">Ні</option>
+              </select>
+            </div>
+            <div class="col-6 mt-3 text-center ">
+                <button type="submit" class="btn btn-primary form-control">Додати рецензію</button>
+            </div>
+        </div>
+    </div>
+</form>
