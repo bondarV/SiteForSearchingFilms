@@ -22,7 +22,7 @@
     <form method="post">
         <div class="border p-4 mt-4">
             <div class="row border-bottom border-5 border- p-3 mb-4 d-flex align-items-center">
-                <h2 class="col-6">Додати огляд</h2>
+                <h2 class="col-6">Видалити огляд</h2>
                 <div class="col-6 col-md-6 text-md-end text-center">
                     <a asp-controller="Review" asp-action="Index" class="btn btn-outline-secondary">Повернутися до опису фільму</a>
                 </div>
@@ -33,7 +33,7 @@
             <div class="rating-css align-items-center d-flex my-4 p-3 w-50 rounded-3" style="border: 1px solid black">
                 <div class="d-flex" style="gap: 10px;">
                     @for(int i=1; i <= 10; i++){
-                        <input class="d-none" asp-for="Rating" type="radio" value="@i" id="@i">
+                        <input disabled="disabled" class="d-none" asp-for="Rating" type="radio" value="@i" id="@i">
                         <label for="@i" class="bi bi-star-fill"></label>
                     }
                 </div>
@@ -42,48 +42,30 @@
             <div class="row mb-3" style="background-color: lightgray;">
                 <h2 class="pt-2 col-12 text-primary">Твоя рецензія</h2>
             </div>
-            <div asp-validation-summary="ModelOnly"></div>
             <div class="row mb-3">
                 <div class="col-12">
-                    <input asp-for="Headline" required="required" class="form-control" placeholder="Напиши коротесеньку назву, яка якнайкраще описуватиме твою рецензію">
-                    <span asp-validation-for="Headline" class="text-danger"></span>
+                    <input asp-for="Headline" disabled="disabled" class="form-control" placeholder="Напиши коротесеньку назву, яка якнайкраще описуватиме твою рецензію">
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col-12">
-                    <textarea asp-for="TextReview" required="required" class="form-control" rows="5px" placeholder="Розмісти у межах діапазону рецензію на обраний фільм"></textarea>
-                    <span asp-validation-for="TextReview" class="text-danger"></span>
+                    <textarea asp-for="TextReview" disabled="disabled" class="form-control" rows="5px" placeholder="Розмісти у межах діапазону рецензію на обраний фільм"></textarea>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col-6">
                     <label asp-for="SpoilersConsist" class="form-label"></label>
-                    <select required="required" class="form-select" asp-for="SpoilersConsist">
+                    <select disabled="disabled" class="form-select" asp-for="SpoilersConsist">
                         <option selected disabled hidden value="">Будь ласка обирайте</option>
                         <option value="False">Так</option>
                         <option value="True">Ні</option>
                     </select>
                 </div>
                 <div class="col-6 mt-3 text-center ">
-                    <button type="submit" class="btn btn-primary form-control">Додати рецензію</button>
+                    <button type="submit" class="btn btn-danger form-control">Видалити рецензію</button>
                 </div>
             </div>
         </div>
     </form>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.querySelectorAll('.rating-css input').forEach(input => {
-                input.addEventListener('change', function() {
-                    document.getElementById('selectedRating').innerText = this.value;
-                });
-            });
-        });
-    </script>
-
-    @section Scripts
-    {
-        <partial name="_ValidationScriptsPartial"/>
-    }
 </body>
 </html>

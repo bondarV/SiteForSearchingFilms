@@ -10,7 +10,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40820f91-057b-47bb-b498-8296d14be1ff" name="Changes" comment="" />
+    <list default="true" id="40820f91-057b-47bb-b498-8296d14be1ff" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/Controllers/ReviewController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Controllers/ReviewController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/Models/Genre.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Models/Genre.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/Models/Review.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Models/Review.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/Views/Review/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Views/Review/Create.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/Views/Review/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Views/Review/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/MovieSearch.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/MovieSearch.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/MovieSearch.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/MovieSearch.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/MovieSearch.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/MovieSearch.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/ref/MovieSearch.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/ref/MovieSearch.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/refint/MovieSearch.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/refint/MovieSearch.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +63,7 @@
     &quot;.NET Launch Settings Profile.MovieSearch: http.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -51,7 +71,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;HotReloadSettingsPage&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -140,6 +160,19 @@
       <workItem from="1712934294279" duration="501000" />
       <workItem from="1713021790538" duration="2222000" />
       <workItem from="1713290101616" duration="5229000" />
+      <workItem from="1713297455745" duration="2008000" />
+      <workItem from="1713342263518" duration="982000" />
+      <workItem from="1713465145018" duration="1806000" />
+      <workItem from="1713527647156" duration="219000" />
+      <workItem from="1713528258078" duration="3338000" />
+      <workItem from="1713540587177" duration="392000" />
+      <workItem from="1713543726794" duration="702000" />
+      <workItem from="1713551206591" duration="621000" />
+      <workItem from="1713718051832" duration="5338000" />
+      <workItem from="1713881541678" duration="6649000" />
+      <workItem from="1713899542783" duration="4517000" />
+      <workItem from="1713941700369" duration="19915000" />
+      <workItem from="1714029163436" duration="374000" />
     </task>
     <task id="LOCAL-00001" summary="2-Додана можливість додавати рецензії в базу даних + відображення на сайті та зовнішний вигляд">
       <option name="closed" value="true" />
@@ -189,6 +222,45 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MovieSearch/Controllers/ReviewController.cs</url>
+          <line>72</line>
+          <properties documentPath="C:\Users\user\Desktop\Курсач\ProjectDemo\MovieSearch\Controllers\ReviewController.cs" initialLine="70" containingFunctionPresentation="Method 'Delete'">
+            <startOffsets>
+              <option value="2025" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2069" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MovieSearch/Controllers/ReviewController.cs</url>
+          <line>74</line>
+          <properties documentPath="C:\Users\user\Desktop\Курсач\ProjectDemo\MovieSearch\Controllers\ReviewController.cs" initialLine="72" containingFunctionPresentation="Method 'Delete'">
+            <startOffsets>
+              <option value="2120" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2121" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MovieSearch/Controllers/ReviewController.cs</url>
+          <line>73</line>
+          <properties documentPath="C:\Users\user\Desktop\Курсач\ProjectDemo\MovieSearch\Controllers\ReviewController.cs" initialLine="71" containingFunctionPresentation="Method 'Delete'">
+            <startOffsets>
+              <option value="2082" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2107" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
