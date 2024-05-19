@@ -1,0 +1,37 @@
+﻿@using MovieSearch.Model.Models
+@model IEnumerable<MovieSearch.Model.Models.Film>
+
+<div class="row pb-3">
+    <h1 class="mt-3">Most popular films in this week</h1>
+    @foreach (var film in Model)
+    {
+        <div class="col-lg-3 col-sm-6">
+            <div class="row p-2">
+                <div class="col-12 p-1">
+                    <div class="card border-0 p-3 shadow border-top border-5 rounded">
+                        <a asp-action="Details"
+                           asp-route-filmId="@film.Id">
+                            <img alt="photo-film" src="https://image.tmdb.org/t/p/w500/@(film.Poster_Path)" class="card-img-top rounded"/>
+                        </a>
+                        <div class="card-body pb-0">
+                            <div>
+                                @if (film.Vote_Average == 0)
+                                {
+                                    <p class="card-title">Not voted</p>
+                                }
+                                else
+                                {
+                                    <p class="card-title"><i class="bi bi-star-fill me-2" style="color: red"></i>@film.Vote_Average / 10</p>
+                                }
+                            </div>
+
+                            <p class="card-title h5 text-primary" style="height: 55px">@film.Title</p>
+                        </div>
+                        <a asp-action="Details"
+                           asp-route-filmId="@film.Id" class="btn opacity-75 btn-primary bg-gradient border-0 form-control">Details</a>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

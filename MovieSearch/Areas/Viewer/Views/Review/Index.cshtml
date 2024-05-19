@@ -1,0 +1,82 @@
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model  List<MovieSearch.Model.Models.Review>
+<style>
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+ .add-review:hover{
+ background-color: rgba(1,1,1,0.1);
+ }
+</style>
+@*<partial name="_Notification"/>*@
+<div class="container">
+    <div class="row pt-4 align-items-center pb-3 d-flex">
+        <div class="col-10">
+            <h2 class="ps-3 border-start border-5  text-primary ">User reviews</h2>
+        </div >
+        <div class="col-2 d-flex justify-content-center  add-review">
+            <a asp-controller="Review" asp-action="Create" class="text-primary text-decoration-none d-flex align-items-center fs-4 "><i class="bi bi-plus fs-2 "></i>Review</a>
+        </div>
+    </div>
+      @foreach(var obj in Model){
+          <table class="table table-bordered table-striped table col-lg-100 text-center">
+              <thead>
+              <tr class="row">
+                  <th class="col-2">
+                      Name Category
+                  </th>
+                  <th class="col-10">
+                      Value
+                  </th>
+              </tr>
+              </thead>
+              <tbody>
+              @*<tr class="row">
+                      <td class="col-2">Id</td>
+                      <td class="col-10">@obj.Id</td>
+                  </tr>*@
+                  <tr class="row">
+                                     <td class="col-2">Rating</td>
+                                     <td class="col-10"><div class="d-flex flex-column justify-content-center ">
+                                         <div class="d-flex justify-content-center " >
+                                             @for (int i = 0; i <= @obj.Rating; i++)
+                                             {
+                                                 <div class="bi bi-star-fill"></div>
+
+                                             }
+                                         </div>
+                                         <div class="display-6">
+                                            @obj.Rating/10
+                                         </div>
+                                     </div></td>
+                                </tr>
+                   <tr class="row">
+                       <td class="col-2">Headline</td>
+                      <td class="col-10">@obj.Headline</td>
+                  </tr>
+                  <tr class="row">
+                       <td class="col-2">TextReview</td>    
+                       <td class="col-10">@obj.TextReview</td>
+                  </tr>
+              <tr class="row">
+                  <td class="col-2">SpoilerConsist</td>
+                          <td class="col-10">@obj.SpoilersConsist</td>
+              </tr>
+              <tr>
+                  <td class="row">
+                      <div class="w-100 btn-group " role="group">
+                          <a asp-controller="Review" asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-primary mx-2">
+                              <i class="bi bi-pencil-square"></i>
+                          </a>
+                           <a asp-controller="Review" asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-danger mx-2">
+                                                    <i class="bi bi-trash"></i>
+                                                    </a>
+                      </div>
+                  </td>
+              </tr>
+              </tbody>
+          </table>
+      }
+</div>

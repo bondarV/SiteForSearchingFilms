@@ -1,0 +1,42 @@
+﻿@model MovieSearch.Model.Models.Film
+
+@{
+    ViewData["Title"] = "Film Details";
+}
+<div class="container">
+        <div class="row d-flex align-items-start">
+            <div class="col-md-7">
+                <h1>@Model.Title</h1>
+                <p>Original title: @Model.Original_Title</p>
+                <p>@Model.Original_Language -- @Model.Release_Date.ToShortDateString()</p>
+            </div>
+            <div class="col-md-5 align-items-center d-flex justify-content-end gap-4">
+                <div>
+                    <p><strong>TMDB Rating<br/>(кількість голосів @Model.Vote_Count)</strong></p>
+                    @if (Model.Vote_Average == 0)
+                    {
+                        <p class="card-title h3">Not voted</p>
+                    }
+                    else
+                    {
+                        <p class="card-title h3">
+                            <i class="bi bi-star-fill me-2" style="color: red"></i>
+                            @Model.Vote_Average / 10
+                        </p>
+                    }
+                </div>
+                <div> <div class="col-md-6 ">
+                                 <a asp-controller="Review" asp-action="Create" class="text-primary text-decoration-none d-flex align-items-center fs-4 "><i class="bi bi-plus fs-2 "></i>Review</a>
+                             </div></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="https://image.tmdb.org/t/p/w500/@Model.Backdrop_Path"  alt="Film Poster" class="img-fluid" >
+            </div>
+            <div class="col-md-9">
+                     <p><strong>Overview:</strong>@Model.Overview</p>
+            </div>  
+            </div>
+        </div>
+<!-- You can further customize the layout and styling of this view -->

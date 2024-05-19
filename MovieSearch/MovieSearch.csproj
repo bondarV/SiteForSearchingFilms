@@ -7,13 +7,52 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.3" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0-preview.2.24128.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0-preview.2.24128.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0-preview.2.24128.4">
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MovieSearch.DataAccess\MovieSearch.DataAccess.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Pages\" />
+    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Areas\Viewer\Views\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="Areas\Admin\Views\Film\Index.cshtml" />
+    <AdditionalFiles Include="Areas\Admin\Views\Genre\Index.cshtml" />
+    <AdditionalFiles Include="Areas\Viewer\Views\Home\Index.cshtml" />
+    <AdditionalFiles Include="Areas\Viewer\Views\Home\Privacy.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Genre\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Controllers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Controllers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\**" />
   </ItemGroup>
 
 </Project>
