@@ -1,6 +1,6 @@
 using MovieSearch.DataAccess.Data;
 using MovieSearch.DataAccess.Repository.IRepository;
-using MovieSearch.Model.Models;
+using MovieSearch.Model;
 
 namespace MovieSearch.DataAccess.Repository
 {

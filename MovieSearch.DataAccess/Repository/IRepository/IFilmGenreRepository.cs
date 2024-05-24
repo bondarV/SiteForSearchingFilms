@@ -1,4 +1,4 @@
-using MovieSearch.Model.Models;
+using MovieSearch.Model;
 
 namespace MovieSearch.DataAccess.Repository.IRepository;
 

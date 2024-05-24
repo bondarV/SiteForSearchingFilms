@@ -1,5 +1,7 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿@using MovieSearch.Utility
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +11,7 @@
     <link rel="stylesheet" href="~/MovieSearch.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"/>
+ 
 </head>
 <body>
     <header>
@@ -19,26 +22,32 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-space ">
-                    <ul class="navbar-nav flex-grow-1">
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-space ">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-area="Viewer" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    @if(User.IsInRole(SD.Role_Viewer)){
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="Viewer" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-white" asp-area="Viewer" asp-controller="Review" asp-action="Index">Review</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="A" asp-controller="Review" asp-action="Index">Review</a>
-                        </li>
+                    }
+                    <li class="nav-item">
+                        <a class="nav-link text-white"  asp-area="Viewer" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    </li>
+                    @if (User.IsInRole(SD.Role_Admin))
+                    {
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="Admin" asp-controller="Genre" asp-action="Index">Genre</a></li>
+                        <li/>
                         <li class="nav-item">
-                            <a class="nav-link text-white"  asp-area="Viewer" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-white" asp-area="Admin" asp-controller="Film" asp-action="Index">Film</a>
                         </li>
-                           <li class="nav-item">
-                                                    <a class="nav-link text-white"  asp-area="Admin" asp-controller="Film" asp-action="Index">Film</a>
-                                                </li>
-                    </ul>
-                    <partial name="_LoginPartial"/>
-                </div>
+                    }       
+                </ul>
+                <partial name="_LoginPartial"/>
             </div>
+              </div>
         </nav>
     </header>
     <div class="container">

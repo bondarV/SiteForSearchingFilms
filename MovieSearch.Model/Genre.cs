@@ -1,7 +1,5 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-
-namespace MovieSearch.Model.Models
+﻿using System.ComponentModel.DataAnnotations;
+namespace MovieSearch.Model
 {
     public class Genre
     {

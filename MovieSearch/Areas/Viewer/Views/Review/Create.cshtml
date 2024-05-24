@@ -1,4 +1,5 @@
-@model MovieSearch.Model.Models.Review
+@model MovieSearch.Model.Review
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,12 +20,14 @@
 </head>
 <body>
 
-    <form method="post">
+    <form asp-action="Create" method="post">
+        <input type="hidden" asp-for="FilmId"/>
+        <input type="hidden" asp-for="UserId"/>
         <div class="border p-4 mt-4">
             <div class="row border-bottom border-5 border- p-3 mb-4 d-flex align-items-center">
                 <h2 class="col-6">Додати огляд</h2>
                 <div class="col-6 col-md-6 text-md-end text-center">
-                    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary ">Повернутися до опису фільму</a>
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary">Повернутися до опису фільму</a>
                 </div>
             </div>
             <div class="row mb-3" style="background-color: lightgray;">
@@ -42,7 +45,7 @@
             <div class="row mb-3" style="background-color: lightgray;">
                 <h2 class="pt-2 col-12 text-primary">Твоя рецензія</h2>
             </div>
-            <div asp-validation-summary="ModelOnly"></div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="row mb-3">
                 <div class="col-12">
                     <input asp-for="Headline" required="required" class="form-control" placeholder="Напиши коротесеньку назву, яка якнайкраще описуватиме твою рецензію">
@@ -51,7 +54,7 @@
             </div>
             <div class="row mb-3">
                 <div class="col-12">
-                    <textarea asp-for="TextReview" required="required" class="form-control" rows="5px" placeholder="Розмісти у межах діапазону рецензію на обраний фільм"></textarea>
+                    <textarea asp-for="TextReview" required="required" class="form-control" rows="5" placeholder="Розмісти у межах діапазону рецензію на обраний фільм"></textarea>
                     <span asp-validation-for="TextReview" class="text-danger"></span>
                 </div>
             </div>
@@ -60,11 +63,11 @@
                     <label asp-for="SpoilersConsist" class="form-label"></label>
                     <select required="required" class="form-select" asp-for="SpoilersConsist">
                         <option selected disabled hidden value="">Будь ласка обирайте</option>
-                                <option value="false">Ні</option>
-                                                               <option value="true">Так</option>
+                        <option value="false">Ні</option>
+                        <option value="true">Так</option>
                     </select>
                 </div>
-                <div class="col-6 mt-3 text-center ">
+                <div class="col-6 mt-3 text-center">
                     <button type="submit" class="btn btn-primary form-control">Додати рецензію</button>
                 </div>
             </div>
@@ -81,9 +84,8 @@
         });
     </script>
 
-    @section Scripts
-    {
-        <partial name="_ValidationScriptsPartial"/>
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
     }
 </body>
 </html>

@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MovieSearch.Model.Models;
+namespace MovieSearch.Model;
 
 public class FilmGenre
 {

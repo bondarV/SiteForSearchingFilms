@@ -1,7 +1,10 @@
 using System.Diagnostics;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using MovieSearch.DataAccess.Repository.IRepository;
-using MovieSearch.Model.Models;
+using MovieSearch.Model;
+using NuGet.Protocol;
 
 namespace MovieSearch.Areas.Viewer.Controllers
 {
@@ -16,14 +19,27 @@ namespace MovieSearch.Areas.Viewer.Controllers
             _unitOfWork = unitOfWork;
             _logger = logger;
         }
-        public IActionResult Index()
-        {   
-            var filmList = _unitOfWork.Film.GetAll().OrderByDescending(f => f.Popularity).Take(8);
-            return View(filmList);
+        public IActionResult Index(string searchString)
+        {   var films = _unitOfWork.Film.GetAll();
+             films = films.OrderByDescending(film => film.Popularity).Take(16).ToList();
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                films = _unitOfWork.Film.GetAll();
+                films = films.Where(f => 
+                    f.Title.IndexOf(searchString, StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    f.Original_Title.IndexOf(searchString, StringComparison.OrdinalIgnoreCase) >= 0
+                ).ToList();
+            }
+            /*else
+            {
+                films = films.OrderByDescending(film => film.Popularity).Take(16).ToList();
+            }*/
+            return View(films);
         }
+
         public IActionResult Details(int filmId)    
         {   
-            var film = _unitOfWork.Film.Get(u=> u.Id == filmId);
+            var film = _unitOfWork.Film.Get(u=> u.Id == filmId, includeProperties: "FilmGenres.Genre");
             return View(film);
         }
         public IActionResult Privacy()  

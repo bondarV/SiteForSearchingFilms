@@ -1,18 +1,43 @@
-﻿@model MovieSearch.Model.Models.Film
-
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using System.Security.Claims
+@using MovieSearch.Model
+@using MovieSearch.Utility
+@model Film
+<style>
+    .bold-text{
+    font-weight: bold;
+    }
+    .beautiful-text{
+    font-size: 25px;
+    color: whitesmoke;
+    }
+</style>
 @{
     ViewData["Title"] = "Film Details";
 }
-<div class="container">
-        <div class="row d-flex align-items-start">
-            <div class="col-md-7">
-                <h1>@Model.Title</h1>
-                <p>Original title: @Model.Original_Title</p>
-                <p>@Model.Original_Language -- @Model.Release_Date.ToShortDateString()</p>
-            </div>
-            <div class="col-md-5 align-items-center d-flex justify-content-end gap-4">
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8">
+            <h1 class="display-4">@Model.Title</h1>
+            <p class="b text-muted h4"><span class="bold-text">Original title:</span> @Model.Original_Title</p>
+            <p class="text-muted "><span class="bold-text">Language:</span> @Model.Original_Language</p>
+            <p class="text-muted"><span class="bold-text">Release date:</span> @Model.Release_Date.ToShortDateString()</p>
+            @if (Model?.FilmGenres != null && Model.FilmGenres.Any())
+            {
+                <h4 class="text-primary">Genres</h4>
                 <div>
-                    <p><strong>TMDB Rating<br/>(кількість голосів @Model.Vote_Count)</strong></p>
+                    @foreach (var filmGenre in Model.FilmGenres)
+                    {
+                        <span class="p-1 bg-info me-2 beautiful-text ">@filmGenre.Genre.Name</span>
+                    }
+                </div>
+            }
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="d-flex flex-column align-items-center ">
+                <div>
+                    <p class="mb-0 h4"><strong>TMDB Rating<br/>(@Model.Vote_Count votes)</strong></p>
                     @if (Model.Vote_Average == 0)
                     {
                         <p class="card-title h3">Not voted</p>
@@ -20,23 +45,37 @@
                     else
                     {
                         <p class="card-title h3">
-                            <i class="bi bi-star-fill me-2" style="color: red"></i>
+                            <i class="bi bi-star-fill me-2" style="color: red;"></i>
                             @Model.Vote_Average / 10
                         </p>
                     }
                 </div>
-                <div> <div class="col-md-6 ">
-                                 <a asp-controller="Review" asp-action="Create" class="text-primary text-decoration-none d-flex align-items-center fs-4 "><i class="bi bi-plus fs-2 "></i>Review</a>
-                             </div></div>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <a asp-controller="Review" asp-action="Create" asp-route-filmId="@Model.Id" asp-route-userId="@User.FindFirstValue(ClaimTypes.NameIdentifier)" class="btn btn-primary mt-3">
+                        <i class="bi bi-plus-lg"></i> Write a Review
+                    </a> 
+                    
+                }
+                else
+                {
+                    <a  asp-area="Identity" asp-page="/Account/Register"  class="btn btn-primary mt-3">
+                        <i class="bi bi-plus-lg"></i> Write a Review
+                    </a>
+                }
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-3">
-                <img src="https://image.tmdb.org/t/p/w500/@Model.Backdrop_Path"  alt="Film Poster" class="img-fluid" >
-            </div>
-            <div class="col-md-9">
-                     <p><strong>Overview:</strong>@Model.Overview</p>
-            </div>  
-            </div>
+    </div>
+    <div class="row mt-4 mb-3 ">
+        <div class="col-md-4">
+            <img src="https://image.tmdb.org/t/p/w500/@Model.Backdrop_Path" alt="Film Poster" class="img-fluid rounded shadow-sm">
         </div>
-<!-- You can further customize the layout and styling of this view -->
+        <div class="col-md-8">
+            <h4 class="mt-3 mt-md-0">Overview</h4>
+            <p class="lead">@Model.Overview</p>
+        </div>
+    </div>
+    <div class="mt-5 p-4 text-center h3" style="background-color: #0dcaf0">Всі рецензії до даного фільму</div>
+    <table>
+    </table>
+</div>

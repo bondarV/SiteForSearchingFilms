@@ -1,10 +1,16 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MovieSearch.DataAccess.Repository.IRepository;
-using MovieSearch.Model.Models;
+using MovieSearch.Model;
+using MovieSearch.Utility;
 
 namespace MovieSearch.Areas.Viewer.Controllers
 {
     [Area("Viewer")]
+    [Authorize]
     public class ReviewController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -13,16 +19,27 @@ namespace MovieSearch.Areas.Viewer.Controllers
             _unitOfWork = unitOfWork;
         }
         [HttpGet]
-        public IActionResult Create()
-        {
-            return View();
-        }
-        [HttpGet]
         public IActionResult Index()
         {
             List<Review> objReviewList = _unitOfWork.Review.GetAll().ToList();
             return View(objReviewList);
         } 
+        [HttpGet]
+        public IActionResult Create(int filmId, string userId)
+        {  
+            if (string.IsNullOrEmpty(userId))
+            {
+                TempData["error"] = "Film ID and User ID are required.";
+                return RedirectToAction("Index","Home");
+            }
+
+            Review review = new Review
+            {
+                FilmId = filmId,
+                UserId = userId
+            };
+            return View(review);
+        }
         [HttpPost]
         public IActionResult Create(Review obj)
         {
@@ -33,11 +50,13 @@ namespace MovieSearch.Areas.Viewer.Controllers
             if (ModelState.IsValid)
             {
                 _unitOfWork.Review.Add(obj);
-                _unitOfWork.Save();
-                TempData["success"] = "Review created successfully";
-                return RedirectToAction("Index");
+            _unitOfWork.Save();
+            TempData["success"] = "Review created successfully";
+            return RedirectToAction("Index", "Home");
             }
+
             return View();
+
         }
 
         public IActionResult Edit(int? id)

@@ -1,52 +1,47 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
+using Microsoft.AspNetCore.Authorization;
+using MovieSearch.Areas.Admin.Controllers.Dto;
 using MovieSearch.DataAccess.Repository.IRepository;
-using MovieSearch.Model.Models;
+using MovieSearch.Model;
+using MovieSearch.Utility;
 
 namespace MovieSearch.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class FilmController : Controller
     {
-        string BASE_URL = "https://api.themoviedb.org/3/trending/movie/week";
-        string API_KEY = "cef4b41f48bbd43460688be4a6c28f23";
+        private const string BASE_URL = "https://api.themoviedb.org/3/discover/movie/";
+        private const string API_KEY = "cef4b41f48bbd43460688be4a6c28f23";
 
-        HttpClient httpClient;
+        private readonly HttpClient _httpClient;
         private readonly IUnitOfWork _unitOfWork;
 
         public FilmController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
-            httpClient = new HttpClient();
-            httpClient.DefaultRequestHeaders.Accept.Clear();
-            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            _httpClient = new HttpClient();
+            _httpClient.DefaultRequestHeaders.Accept.Clear();
+            _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
-        private async Task<List<Film>> GetFilms()
+        private async Task<List<FilmDto>> GetFilms(int pageNumber)
         {
-            string requestUrl = $"{BASE_URL}?api_key={API_KEY}";
-            string filmList = "";
-            List<Film> films = new List<Film>(); // Use List<Film>
+            var requestUrl = $"{BASE_URL}?api_key={API_KEY}&page={pageNumber}";
+            var films = new List<FilmDto>();
 
-            httpClient.BaseAddress = new Uri(requestUrl);
-            HttpResponseMessage response = await httpClient.GetAsync(requestUrl);
-
+            var response = await _httpClient.GetAsync(requestUrl);
             if (response.IsSuccessStatusCode)
             {
-                filmList = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
-            }
-
-            if (!filmList.Equals(""))
-            {
-                // Deserialize the JSON content into a dynamic object
-                var filmData = JsonConvert.DeserializeObject<dynamic>(filmList);
-
-                // Extract the films array (assuming it's nested under "results")
-                var filmsArray = filmData.results;
-
-                // Now, convert the filmsArray to a list of Film objects
-                films = JsonConvert.DeserializeObject<List<Film>>(filmsArray.ToString());
+                var filmList = await response.Content.ReadAsStringAsync();
+                if (!string.IsNullOrEmpty(filmList))
+                {
+                    var filmData = JsonConvert.DeserializeObject<dynamic>(filmList);
+                    var filmsArray = filmData.results;
+                    films = JsonConvert.DeserializeObject<List<FilmDto>>(filmsArray.ToString());
+                }
             }
 
             return films;
@@ -54,29 +49,47 @@ namespace MovieSearch.Areas.Admin.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var films = await GetFilms();
-            foreach (var film in films)
+            for (int page = 1; page <= 10; page++)
             {
-                // Check if the film already exists in the database
-                var existingFilm = _unitOfWork.Film.Get(f => f.Id == film.Id);
-
-                if (existingFilm == null)
+                var filmDtos = await GetFilms(page);
+                foreach (var filmDto in filmDtos)
                 {
-                    // Add the new film to the database
+                    var film = new Film
+                    {
+                        Title = filmDto.Title,
+                        Overview = filmDto.Overview,
+                        Id = filmDto.Id,
+                        Adult = filmDto.Adult,
+                        Backdrop_Path = filmDto.Backdrop_Path,
+                        Original_Title = filmDto.Original_Title,
+                        Original_Language = filmDto.Original_Language,
+                        Popularity = filmDto.Popularity,
+                        Poster_Path = filmDto.Poster_Path,
+                        Vote_Average = filmDto.Vote_Average,
+                        Vote_Count = filmDto.Vote_Count,
+                        Release_Date = filmDto.Release_Date
+                    };
+
                     _unitOfWork.Film.Add(film);
-                    foreach (var genreId in film.Genre_Ids)
+                    _unitOfWork.Film.Update(film);
+
+                    foreach (var genreId in  filmDto.Genre_Ids)
                     {
                         var filmGenre = new FilmGenre
                         {
                             FilmId = film.Id,
                             GenreId = genreId
                         };
+
                         _unitOfWork.FilmGenre.Add(filmGenre);
+                        _unitOfWork.FilmGenre.Update(filmGenre);
                     }
                 }
+
+                _unitOfWork.Save();
             }
-            _unitOfWork.Save();
-            var filmsList = _unitOfWork.Film.GetAll();
+
+            var filmsList = _unitOfWork.Film.GetAll().Take(3);
             return View(filmsList);
         }
     }

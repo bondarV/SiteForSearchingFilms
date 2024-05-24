@@ -86,6 +86,11 @@ namespace MovieSearch.DataAccess.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasMaxLength(21)
+                        .HasColumnType("nvarchar(21)");
+
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -137,6 +142,10 @@ namespace MovieSearch.DataAccess.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUser");
+
+                    b.UseTphMappingStrategy();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -167,12 +176,10 @@ namespace MovieSearch.DataAccess.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -209,12 +216,10 @@ namespace MovieSearch.DataAccess.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
@@ -224,7 +229,7 @@ namespace MovieSearch.DataAccess.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("MovieSearch.Model.Models.Film", b =>
+            modelBuilder.Entity("MovieSearch.Model.Film", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -271,7 +276,7 @@ namespace MovieSearch.DataAccess.Migrations
                     b.ToTable("Films");
                 });
 
-            modelBuilder.Entity("MovieSearch.Model.Models.FilmGenre", b =>
+            modelBuilder.Entity("MovieSearch.Model.FilmGenre", b =>
                 {
                     b.Property<int>("FilmId")
                         .HasColumnType("int");
@@ -286,7 +291,7 @@ namespace MovieSearch.DataAccess.Migrations
                     b.ToTable("FilmGenres");
                 });
 
-            modelBuilder.Entity("MovieSearch.Model.Models.Genre", b =>
+            modelBuilder.Entity("MovieSearch.Model.Genre", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -303,13 +308,16 @@ namespace MovieSearch.DataAccess.Migrations
                     b.ToTable("Genres");
                 });
 
-            modelBuilder.Entity("MovieSearch.Model.Models.Review", b =>
+            modelBuilder.Entity("MovieSearch.Model.Review", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("FilmId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Headline")
                         .IsRequired()
@@ -327,19 +335,28 @@ namespace MovieSearch.DataAccess.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Reviews");
+                    b.HasIndex("FilmId");
 
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Headline = "Beautiful Landscapes",
-                            Rating = (byte)0,
-                            SpoilersConsist = false,
-                            TextReview = "If that makes any sense. What I'm trying to say while pointing Aristotle's quote into a mirror, is that this is worth watching simply for all of the outstanding individual performances. There are many other reasons to tune in, but the acting clinic on parade here is a lot of fun."
-                        });
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Reviews");
+                });
+
+            modelBuilder.Entity("MovieSearch.Model.ApplicationUser", b =>
+                {
+                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasDiscriminator().HasValue("ApplicationUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -393,15 +410,15 @@ namespace MovieSearch.DataAccess.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("MovieSearch.Model.Models.FilmGenre", b =>
+            modelBuilder.Entity("MovieSearch.Model.FilmGenre", b =>
                 {
-                    b.HasOne("MovieSearch.Model.Models.Film", "Film")
+                    b.HasOne("MovieSearch.Model.Film", "Film")
                         .WithMany("FilmGenres")
                         .HasForeignKey("FilmId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MovieSearch.Model.Models.Genre", "Genre")
+                    b.HasOne("MovieSearch.Model.Genre", "Genre")
                         .WithMany("FilmGenres")
                         .HasForeignKey("GenreId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -412,12 +429,33 @@ namespace MovieSearch.DataAccess.Migrations
                     b.Navigation("Genre");
                 });
 
-            modelBuilder.Entity("MovieSearch.Model.Models.Film", b =>
+            modelBuilder.Entity("MovieSearch.Model.Review", b =>
                 {
-                    b.Navigation("FilmGenres");
+                    b.HasOne("MovieSearch.Model.Film", "Film")
+                        .WithMany("Reviews")
+                        .HasForeignKey("FilmId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MovieSearch.Model.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Film");
+
+                    b.Navigation("User");
                 });
 
-            modelBuilder.Entity("MovieSearch.Model.Models.Genre", b =>
+            modelBuilder.Entity("MovieSearch.Model.Film", b =>
+                {
+                    b.Navigation("FilmGenres");
+
+                    b.Navigation("Reviews");
+                });
+
+            modelBuilder.Entity("MovieSearch.Model.Genre", b =>
                 {
                     b.Navigation("FilmGenres");
                 });

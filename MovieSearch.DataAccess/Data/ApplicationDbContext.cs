@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using MovieSearch.Model.Models;
+using Microsoft.EntityFrameworkCore;
+using MovieSearch.Model;
 
 namespace MovieSearch.DataAccess.Data
 {
@@ -19,29 +19,29 @@ namespace MovieSearch.DataAccess.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            
-            modelBuilder.Entity<Review>().HasData(new Review
-            {
-                Id = 1, Headline = "Beautiful Landscapes",
-                TextReview =
-                    "If that makes any sense. What I'm trying to say while pointing Aristotle's quote into a mirror, is that this is worth watching simply for all of the outstanding individual performances. There are many other reasons to tune in, but the acting clinic on parade here is a lot of fun.",
-                SpoilersConsist = false
-            });
+
             modelBuilder.Entity<FilmGenre>()
-                .HasKey(fg => new { fg.FilmId, fg.GenreId }); // Define composite primary key for FilmGenre
+                .HasKey(fg => new { fg.FilmId, fg.GenreId });
 
             modelBuilder.Entity<FilmGenre>()
                 .HasOne(fg => fg.Film)
-                .WithMany(f => f.FilmGenres) // One Film has many FilmGenres
-                .HasForeignKey(fg => fg.FilmId); // Foreign key for Film
+                .WithMany(f => f.FilmGenres)
+                .HasForeignKey(fg => fg.FilmId);
 
             modelBuilder.Entity<FilmGenre>()
                 .HasOne(fg => fg.Genre)
-                .WithMany(g => g.FilmGenres) // One Genre has many FilmGenres
-                .HasForeignKey(fg => fg.GenreId); // Foreign key for Genre
+                .WithMany(g => g.FilmGenres)
+                .HasForeignKey(fg => fg.GenreId);
+
+            modelBuilder.Entity<Review>()
+                .HasOne(r => r.Film)
+                .WithMany(f => f.Reviews)
+                .HasForeignKey(r => r.FilmId);
+
+            modelBuilder.Entity<Review>()
+                .HasOne(r => r.User)
+                .WithMany()
+                .HasForeignKey(r => r.UserId);
         }
-        
     }
-    
 }
-    

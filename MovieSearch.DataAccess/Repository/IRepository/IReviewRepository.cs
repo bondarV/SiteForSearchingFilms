@@ -1,6 +1,7 @@
 using MovieSearch;
-using MovieSearch.Model.Models;
 using System.Collections.Generic;
+using MovieSearch.Model;
+
 namespace MovieSearch.DataAccess.Repository.IRepository;
 
 public interface IReviewRepository : IRepository<Review>

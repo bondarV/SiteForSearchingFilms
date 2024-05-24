@@ -1,11 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using MovieSearch.Model.Models;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using MovieSearch.DataAccess.Repository.IRepository;
+using MovieSearch.Model;
+using MovieSearch.Utility;
 
 namespace MovieSearch.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class GenreController : Controller
     {
         string BASE_URL = "https://api.themoviedb.org/3/genre/movie/list";
@@ -58,9 +61,9 @@ namespace MovieSearch.Areas.Admin.Controllers
             List<Genre> genres = await GetGenres();
                 foreach (var genre in genres)
                 {
-                    var existingFilm = _unitOfWork.Film.Get(f => f.Id == genre.Id);
+                    var existingGenre = _unitOfWork.Genre.Get(g => g.Id == genre.Id);
 
-                    if (existingFilm == null)
+                    if (existingGenre == null)
                     {
                         _unitOfWork.Genre.Add(genre);
                         _unitOfWork.Genre.Update(genre);
