@@ -258,7 +258,7 @@ namespace MovieSearch.DataAccess.Migrations
                     b.Property<string>("Poster_Path")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("Release_Date")
+                    b.Property<DateTime?>("Release_Date")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Title")

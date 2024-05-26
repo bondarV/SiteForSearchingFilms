@@ -29,7 +29,7 @@
                     </li>
                     @if(User.IsInRole(SD.Role_Viewer)){
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="Viewer" asp-controller="Review" asp-action="Index">Review</a>
+                            <a class="nav-link text-white" asp-area="Viewer" asp-controller="Review" asp-action="Index">My Reviews</a>
                         </li>
                     }
                     <li class="nav-item">
@@ -42,6 +42,9 @@
                         <li/>
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="Admin" asp-controller="Film" asp-action="Index">Film</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="Identity" asp-page="/Account/Register">Create User</a>
                         </li>
                     }       
                 </ul>

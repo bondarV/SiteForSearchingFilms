@@ -21,6 +21,8 @@
     
 
     <form method="post">
+    <input type="hidden" asp-for="@Model.UserId" />
+        <input type="hidden" asp-for="@Model.FilmId" />
         <div class="border p-4 mt-4">
             <div class="row border-bottom border-5 border- p-3 mb-4 d-flex align-items-center">
                 <h2 class="col-6">Оновити огляд</h2>
@@ -39,10 +41,10 @@
                         <label for="@i" class="bi bi-star-fill"></label>
                     }
                 </div>
-                <div class="ms-4" id="selectedRating" style="font-size: 28px;">10</div>
+                <div class="ms-4" id="selectedRating" style="font-size: 28px;">/ 10</div>
             </div>
             <div class="row mb-3" style="background-color: lightgray;">
-                <h2 class="pt-2 col-12 text-primary">Твоя рецензія</h2>
+                <h2 class="pt-2 col-12 text-primary">Your review</h2>
             </div>
             <div asp-validation-summary="ModelOnly"></div>
             <div class="row mb-3">
@@ -62,9 +64,9 @@
                     <label asp-for="SpoilersConsist" class="form-label"></label>
                <select required="required" class="form-select" asp-for="SpoilersConsist">
                                        <option selected disabled hidden value="">Будь ласка обирайте</option>
-                                       <option value="false">Ні</option>
-                                       <option value="true">Так</option>
-                                   </select>
+                                                                         <option value="false">Ні</option>
+                                                                         <option value="true">Так</option>
+                                       </select>
                 </div>
                 <div class="col-6 mt-3 text-center ">
                     <button type="submit" class="btn btn-primary form-control">Оновити рецензію</button>
@@ -78,6 +80,7 @@
             document.querySelectorAll('.rating-css input').forEach(input => {
                 input.addEventListener('change', function() {
                     document.getElementById('selectedRating').innerText = this.value;
+                    document.getElementById('Rating').value = this.value; // Update the hidden input field
                 });
             });
         });

@@ -27,7 +27,7 @@ namespace MovieSearch.Areas.Admin.Controllers.Dto
         public string? Poster_Path { get; set; }
                 
         [DataType(DataType.Date)]
-        public DateTime Release_Date { get; set; }
+        public DateTime? Release_Date { get; set; }
             
         public decimal? Vote_Average { get; set; }
 

@@ -4,12 +4,12 @@
 @using MovieSearch.Utility
 @model Film
 <style>
-    .bold-text{
-    font-weight: bold;
+    .bold-text {
+        font-weight: bold;
     }
-    .beautiful-text{
-    font-size: 25px;
-    color: whitesmoke;
+    .beautiful-text {
+        font-size: 25px;
+        color: whitesmoke;
     }
 </style>
 @{
@@ -21,21 +21,21 @@
         <div class="col-md-8">
             <h1 class="display-4">@Model.Title</h1>
             <p class="b text-muted h4"><span class="bold-text">Original title:</span> @Model.Original_Title</p>
-            <p class="text-muted "><span class="bold-text">Language:</span> @Model.Original_Language</p>
-            <p class="text-muted"><span class="bold-text">Release date:</span> @Model.Release_Date.ToShortDateString()</p>
-            @if (Model?.FilmGenres != null && Model.FilmGenres.Any())
+            <p class="text-muted"><span class="bold-text">Language:</span> @Model.Original_Language</p>
+            <p class="text-muted"><span class="bold-text">Release date:</span> @Model.Release_Date?.ToShortDateString()</p>
+            @if (@Model?.FilmGenres != null && Model.FilmGenres.Any())
             {
                 <h4 class="text-primary">Genres</h4>
                 <div>
-                    @foreach (var filmGenre in Model.FilmGenres)
+                    @foreach (var filmGenre in @Model.FilmGenres)
                     {
-                        <span class="p-1 bg-info me-2 beautiful-text ">@filmGenre.Genre.Name</span>
+                        <span class="p-1 bg-info me-2 beautiful-text">@filmGenre.Genre.Name</span>
                     }
                 </div>
             }
         </div>
         <div class="col-md-4 text-center">
-            <div class="d-flex flex-column align-items-center ">
+            <div class="d-flex flex-column align-items-center">
                 <div>
                     <p class="mb-0 h4"><strong>TMDB Rating<br/>(@Model.Vote_Count votes)</strong></p>
                     @if (Model.Vote_Average == 0)
@@ -55,18 +55,17 @@
                     <a asp-controller="Review" asp-action="Create" asp-route-filmId="@Model.Id" asp-route-userId="@User.FindFirstValue(ClaimTypes.NameIdentifier)" class="btn btn-primary mt-3">
                         <i class="bi bi-plus-lg"></i> Write a Review
                     </a> 
-                    
                 }
                 else
                 {
-                    <a  asp-area="Identity" asp-page="/Account/Register"  class="btn btn-primary mt-3">
+                    <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-primary mt-3">
                         <i class="bi bi-plus-lg"></i> Write a Review
                     </a>
                 }
             </div>
         </div>
     </div>
-    <div class="row mt-4 mb-3 ">
+    <div class="row mt-4 mb-3">
         <div class="col-md-4">
             <img src="https://image.tmdb.org/t/p/w500/@Model.Backdrop_Path" alt="Film Poster" class="img-fluid rounded shadow-sm">
         </div>
@@ -76,6 +75,34 @@
         </div>
     </div>
     <div class="mt-5 p-4 text-center h3" style="background-color: #0dcaf0">Всі рецензії до даного фільму</div>
-    <table>
-    </table>
+    <div class="mt-4">
+        @if (@Model.Reviews != null && @Model.Reviews.Any())
+        {
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Reviewer</th>
+                        <th>Review</th>
+                        <th>Rating</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var review in @Model.Reviews)
+                    {
+                        <tr>
+                            <td>@review.User.Name</td> 
+                            <td>@review.TextReview</td>
+                            <td>@review.Rating</td>
+                            <td><a asp-controller="Review" asp-action="Details" asp-route-reviewId="@review.Id">Details</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>No reviews available for this film.</p>
+        }
+    </div>
 </div>

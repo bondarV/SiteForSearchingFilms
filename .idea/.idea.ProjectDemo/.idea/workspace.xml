@@ -11,79 +11,98 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40820f91-057b-47bb-b498-8296d14be1ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MovieSearch.Model/ApplicationUser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieSearch.Model/Film.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieSearch.Utility/EmailSender.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieSearch/Areas/Admin/Controllers/Dto/Film.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieSearch/Areas/Identity/Pages/Account/Manage/_ViewStart.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240526214826_ChangedValidationInFilmTable.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240526214826_ChangedValidationInFilmTable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieSearch/Areas/Viewer/Views/Review/Details.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieSearch/MyClassDiagram.cd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectDemo/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectDemo/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectDemo/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectDemo/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectDemo/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectDemo/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectDemo/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectDemo/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/projectdemo.metadata.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/projectdemo.metadata.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/projectdemo.projects.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/projectdemo.projects.v7.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.DataAccess/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240404125056_AddCategoryTableToDb.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240404125056_AddCategoryTableToDb.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240404131854_ChangeProperiesInTableToEf.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240404131854_ChangeProperiesInTableToEf.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240404144712_SeedCategoryTable.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240404144712_SeedCategoryTable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240408130349_AddReviewTableToDb.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240408130349_AddReviewTableToDb.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240408131404_SeedReviewTable.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240408131404_SeedReviewTable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240424071044_AddNewPropertyToReviewTable.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240424071044_AddNewPropertyToReviewTable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240507193204_addIdentityTables.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240507193204_addIdentityTables.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240510154419_AddedMorePropertiesToFilmTable.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240510154419_AddedMorePropertiesToFilmTable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240510172117_ChangePropertyInTableFilm.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240510172117_ChangePropertyInTableFilm.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240510181842_AddedNewPropertiesToTableFilm.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240510181842_AddedNewPropertiesToTableFilm.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240512163118_AddedRelation.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240512163118_AddedRelation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240512170448_ChangesProperties.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240512170448_ChangesProperties.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240512171724_AddedGenre_IdsColumn.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240512171724_AddedGenre_IdsColumn.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240512173535_AddedNewProperties.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240512173535_AddedNewProperties.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240512175425_Changed.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240512175425_Changed.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240513065439_RemovedRequiredField.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240513065439_RemovedRequiredField.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240513071036_ChangedProperty.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240513071036_ChangedProperty.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240513142432_ChangedRequiredFields.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240513142432_ChangedRequiredFields.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240513152618_ChangedDataType.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240513152618_ChangedDataType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240520072126_AddReviewIdentityUserAndFilm.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240520072126_AddReviewIdentityUserAndFilm.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240521195511_ExtendedIdentityUser.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240521195511_ExtendedIdentityUser.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240523132158_ChangedNameToStringInDB.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240523132158_ChangedNameToStringInDB.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240524145843_RemovedUnnecessaryFieldInFilmTable.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240524145843_RemovedUnnecessaryFieldInFilmTable.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/FilmGenreRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/FilmGenreRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/FilmRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/FilmRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/GenreRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/GenreRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/IRepository/IFilmGenreRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/IRepository/IFilmGenreRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/IRepository/IFilmRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/IRepository/IFilmRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/IRepository/IGenreRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/IRepository/IGenreRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/IRepository/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/IRepository/IRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/IRepository/IReviewRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/IRepository/IReviewRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/Repository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/Repository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/ReviewRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/ReviewRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/UnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.DataAccess/Repository/UnitOfWork.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch.Model/Models/ErrorViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.Model/ErrorViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch.Model/Models/Film.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch.Model/Models/FilmGenre.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.Model/FilmGenre.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch.Model/Models/Genre.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.Model/Genre.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch.Model/Models/Review.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.Model/Review.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch.Model/MovieSearch.Model.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.Model/MovieSearch.Model.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch.Utility/MovieSearch.Utility.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.Utility/MovieSearch.Utility.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch.Utility/SD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.Utility/SD.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.Model/Film.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.Model/Film.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch.Model/Review.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch.Model/Review.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Admin/Controllers/Dto/Film.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Admin/Controllers/Dto/Film.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Admin/Controllers/FilmController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Admin/Controllers/FilmController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Admin/Controllers/GenreController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Admin/Controllers/GenreController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Admin/Views/Film/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Admin/Views/Film/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Admin/Views/Genre/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Admin/Views/Genre/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Admin/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Admin/_ViewImports.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Identity/Pages/Account/ForgotPassword.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Identity/Pages/Account/ForgotPassword.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Identity/Pages/Account/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Identity/Pages/Account/Login.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Identity/Pages/Account/Manage/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Identity/Pages/Account/Manage/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Identity/Pages/Account/Manage/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Identity/Pages/Account/Manage/Index.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Identity/Pages/Account/ExternalLogin.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Identity/Pages/Account/ExternalLogin.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Identity/Pages/Account/ExternalLogin.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Identity/Pages/Account/ExternalLogin.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Identity/Pages/Account/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Identity/Pages/Account/Register.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Identity/Pages/Account/Register.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Identity/Pages/Account/Register.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Identity/Pages/Account/ResetPassword.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Identity/Pages/Account/ResetPassword.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Viewer/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Viewer/Controllers/HomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Viewer/Controllers/ReviewController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Viewer/Controllers/ReviewController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Viewer/Views/Home/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Viewer/Views/Home/Details.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Viewer/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Viewer/Views/Home/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Viewer/Views/Review/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Viewer/Views/Review/Create.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Viewer/Views/Review/Delete.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Viewer/Views/Review/Delete.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Viewer/Views/Review/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Viewer/Views/Review/Edit.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Viewer/Views/Review/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Viewer/Views/Review/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/Areas/Viewer/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Areas/Viewer/_ViewImports.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/MovieSearch.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/MovieSearch.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/Views/Shared/Error.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Views/Shared/Error.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Azure.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Azure.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Azure.Identity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Azure.Identity.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Microsoft.Identity.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Microsoft.Identity.Client.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/MovieSearch.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/MovieSearch.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/Views/Shared/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/Views/Shared/_ViewImports.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/MovieSearch.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/MovieSearch.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/MovieSearch.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/MovieSearch.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/MovieSearch.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/MovieSearch.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/bin/Debug/net8.0/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/MovieSearch.sourcelink.json" afterDir="false" />
@@ -91,7 +110,6 @@
       <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/ref/MovieSearch.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/ref/MovieSearch.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/refint/MovieSearch.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/Debug/net8.0/refint/MovieSearch.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/obj/MovieSearch.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/MovieSearch.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieSearch/obj/MovieSearch.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/MovieSearch.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieSearch/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MovieSearch/obj/rider.project.model.nuget.info" afterDir="false" />
@@ -127,7 +145,6 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/8486d31e24f30e3fa1809a95699a0adc16f448d7/src/Identity/Extensions.Stores/src/IdentityUser.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/da7e9894ce22ef8cc02e5acc56e95a6f8cf8f644/src/DefaultBuilder/src/WebApplicationBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/da7e9894ce22ef8cc02e5acc56e95a6f8cf8f644/src/Mvc/Mvc.Core/src/ActionNameAttribute.cs" root0="SKIP_HIGHLIGHTING" />
@@ -138,6 +155,7 @@
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/1381d5ebd2ab1f292848d5b19b80cf71ac332508/src/coreclr/System.Private.CoreLib/src/System/Threading/Monitor.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/1381d5ebd2ab1f292848d5b19b80cf71ac332508/src/libraries/System.Linq/src/System/Linq/AnyAll.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/1381d5ebd2ab1f292848d5b19b80cf71ac332508/src/libraries/System.Linq/src/System/Linq/Last.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/1381d5ebd2ab1f292848d5b19b80cf71ac332508/src/libraries/System.Linq/src/System/Linq/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/1381d5ebd2ab1f292848d5b19b80cf71ac332508/src/libraries/System.Private.CoreLib/src/System/Boolean.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/1381d5ebd2ab1f292848d5b19b80cf71ac332508/src/libraries/System.Private.CoreLib/src/System/Collections/Generic/KeyValuePair.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/1381d5ebd2ab1f292848d5b19b80cf71ac332508/src/libraries/System.Private.CoreLib/src/System/Collections/Generic/List.cs" root0="SKIP_HIGHLIGHTING" />
@@ -154,9 +172,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/16cfb2fd32ad4cb8b7356ed38de4f1781a6908/38/ca3ef4ba/HttpClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/fba9afd29efa49229d2dd911da0bdfedc8e910/2d/4a0e7bf2/ICollection`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/fba9afd29efa49229d2dd911da0bdfedc8e910/38/d88b1c03/StringComparison.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/fba9afd29efa49229d2dd911da0bdfedc8e910/48/21ff4956/IEnumerable`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/fba9afd29efa49229d2dd911da0bdfedc8e910/48/21ff4956/IEnumerable`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/dd946934bf16d9e2efc445b6e58710fad8dfc01c9fbd7d9455cc8facfe542/IdentityDbContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MovieSearch.DataAccess/Migrations/20240404144712_SeedCategoryTable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MovieSearch.Model/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MovieSearch/Areas/Admin/Views/Genre/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MovieSearch/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" root0="FORCE_HIGHLIGHTING" />
@@ -169,13 +186,17 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2ee5GDVGynxUXw8Og5pDkzXyM52" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.MovieSearch: http.executor": "Run",
+    ".NET Launch Settings Profile.MovieSearch: http.executor": "Debug",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Rider.SolutionAnalysis.ShowPreview": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -339,6 +360,11 @@
       <workItem from="1716500480246" duration="2156000" />
       <workItem from="1716530884860" duration="12704000" />
       <workItem from="1716555561513" duration="7664000" />
+      <workItem from="1716563522946" duration="2056000" />
+      <workItem from="1716576649020" duration="10480000" />
+      <workItem from="1716619279341" duration="38452000" />
+      <workItem from="1716705308349" duration="2077000" />
+      <workItem from="1716717390430" duration="26423000" />
     </task>
     <task id="LOCAL-00001" summary="2-Додана можливість додавати рецензії в базу даних + відображення на сайті та зовнішний вигляд">
       <option name="closed" value="true" />
@@ -362,6 +388,7 @@
     <option featureType="dependencySupport" implementationName="dotnet:Microsoft.EntityFrameworkCore" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="2-Додана можливість додавати рецензії в базу даних + відображення на сайті та зовнішний вигляд" />
     <option name="LAST_COMMIT_MESSAGE" value="2-Додана можливість додавати рецензії в базу даних + відображення на сайті та зовнішний вигляд" />

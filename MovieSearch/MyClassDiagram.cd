@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MovieSearch.Areas.Admin.Controllers.FilmController">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACgAAAAAAAAAAAQgAAAEAAAAIAAA=</HashCode>
+      <FileName>Areas\Admin\Controllers\FilmController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieSearch.Areas.Admin.Controllers.GenreController">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAACgAAAAAAAAAAAQgAAAEAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\Controllers\GenreController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieSearch.Areas.Viewer.Controllers.HomeController">
+    <Position X="7" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAQAAAgAAAAAAIAAAAQAAAAEAAAAAAAA=</HashCode>
+      <FileName>Areas\Viewer\Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieSearch.Areas.Viewer.Controllers.ReviewController">
+    <Position X="8.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAACAAgAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Areas\Viewer\Controllers\ReviewController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieSearch.Areas.Admin.Controllers.Dto.FilmDto">
+    <Position X="18.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAGAAAAAEAAAAAAAAAAAQAAEQgAAAQCAASAACA=</HashCode>
+      <FileName>Areas\Admin\Controllers\Dto\Film.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieSearch.DataAccess.Data.ApplicationDbContext">
+    <Position X="20.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MovieSearch.DataAccess.Repository.FilmGenreRepository" Collapsed="true">
+    <Position X="5.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MovieSearch.DataAccess.Repository.FilmRepository" Collapsed="true">
+    <Position X="7.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MovieSearch.DataAccess.Repository.GenreRepository" Collapsed="true">
+    <Position X="9.25" Y="10" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MovieSearch.DataAccess.Repository.Repository&lt;T&gt;" Collapsed="true">
+    <Position X="11.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MovieSearch.DataAccess.Repository.ReviewRepository" Collapsed="true">
+    <Position X="6.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MovieSearch.DataAccess.Repository.UnitOfWork" Collapsed="true">
+    <Position X="5" Y="12.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MovieSearch.Model.ApplicationUser">
+    <Position X="13" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MovieSearch.Model.ErrorViewModel">
+    <Position X="14.75" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MovieSearch.Model.Film">
+    <Position X="16.5" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MovieSearch.Model.Genre">
+    <Position X="18.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MovieSearch.Model.FilmGenre">
+    <Position X="22" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MovieSearch.Model.Review">
+    <Position X="20" Y="5.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MovieSearch.Areas.Identity.Pages.Account.RegisterModel">
+    <Position X="14" Y="10.25" Width="1.5" />
+    <NestedTypes>
+      <Class Name="MovieSearch.Areas.Identity.Pages.Account.RegisterModel.InputModel" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Areas\Identity\Pages\Account\Register.cshtml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAADAAAAQAAAAAgAABAAAAgMgCAAQQAAAIEAAAAAAA=</HashCode>
+      <FileName>Areas\Identity\Pages\Account\Register.cshtml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieSearch.Areas.Identity.Pages.Account.LoginModel">
+    <Position X="16" Y="10" Width="1.5" />
+    <NestedTypes>
+      <Class Name="MovieSearch.Areas.Identity.Pages.Account.LoginModel.InputModel" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Areas\Identity\Pages\Account\Login.cshtml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAgAABAAAAAMAAAAQAAAAIEAAAAAAA=</HashCode>
+      <FileName>Areas\Identity\Pages\Account\Login.cshtml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="MovieSearch.DataAccess.Repository.IRepository.IFilmRepository">
+    <Position X="3.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="MovieSearch.DataAccess.Repository.IRepository.IFilmGenreRepository" Collapsed="true">
+    <Position X="9.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="MovieSearch.DataAccess.Repository.IRepository.IGenreRepository" Collapsed="true">
+    <Position X="5.5" Y="9" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="MovieSearch.DataAccess.Repository.IRepository.IRepository&lt;T&gt;" Collapsed="true">
+    <Position X="5.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="MovieSearch.DataAccess.Repository.IRepository.IReviewRepository" Collapsed="true">
+    <Position X="7.5" Y="9" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="MovieSearch.DataAccess.Repository.IRepository.IUnitOfWork">
+    <Position X="3" Y="10.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

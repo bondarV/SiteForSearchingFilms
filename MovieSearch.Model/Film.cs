@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
+
 namespace MovieSearch.Model
 {
     public class Film
@@ -28,16 +31,13 @@ namespace MovieSearch.Model
         public decimal? Popularity { get; set; }
 
         public string? Poster_Path { get; set; }
-                
-        [DataType(DataType.Date)]
-        public DateTime Release_Date { get; set; }
+        public DateTime? Release_Date { get; set; } 
             
         public decimal? Vote_Average { get; set; }
 
         [Required]
         public int Vote_Count { get; set; }
         
-        // Navigation property for reviews
         public ICollection<Review> Reviews { get; set; }
     }
 }

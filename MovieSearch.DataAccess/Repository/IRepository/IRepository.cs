@@ -5,7 +5,8 @@ namespace MovieSearch.DataAccess.Repository.IRepository;
     public interface IRepository<T> where T : class 
     {
         //T-Category
-        IEnumerable<T> GetAll(string? includeProperties = null);
+        IEnumerable<T> GetAll(string includeProperties = null);
+        IEnumerable<T> GetAllByParameters(Expression<Func<T, bool>> filter,string includeProperties = null);
         T Get(Expression<Func<T, bool>> filter,string? includeProperties = null);
 
         void Add(T entity);
@@ -14,5 +15,6 @@ namespace MovieSearch.DataAccess.Repository.IRepository;
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entity);
 
+        int Count();
 
     }

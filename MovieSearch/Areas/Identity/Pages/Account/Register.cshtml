@@ -1,4 +1,5 @@
 ﻿@page
+@using MovieSearch.Utility
 @model RegisterModel
 @{
     ViewData["Title"] = "Register";
@@ -32,12 +33,14 @@
                 <label asp-for="Input.Name">Name</label>
                 <span asp-validation-for="Input.Name" class="text-danger"></span>
             </div>
-            <div class="form-floating mb-3">
-                <select asp-for="Input.Role" asp-items="Model.Input.RoleList" class="form-select">
-                    <option disabled="disabled" selected="selected">Select the Role</option>
-                </select>
-                <span asp-validation-for="Input.Role" class="text-danger"></span>
-            </div>
+             @if(User.IsInRole(SD.Role_Admin)){
+                 <div class="form-floating mb-3">
+                     <select asp-for="Input.Role" asp-items="Model.Input.RoleList" class="form-select">
+                         <option disabled="disabled" selected="selected">Select the Role</option>
+                     </select>
+                     <span asp-validation-for="Input.Role" class="text-danger"></span>
+                 </div>
+                 }
             <p>
                 <a asp-page="./Login">Already have an account</a>
             </p>

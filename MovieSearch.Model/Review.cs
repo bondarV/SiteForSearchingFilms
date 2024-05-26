@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace MovieSearch.Model
 {
@@ -25,16 +26,15 @@ namespace MovieSearch.Model
         
         public byte Rating { get; set; }
 
-        // Foreign key for Film
         public int FilmId { get; set; }
         
-        // Navigation property for Film
+        [ValidateNever]
         public Film Film { get; set; }
-
-        // Foreign key for User
+        [ValidateNever]
         public string UserId { get; set; }
         
-        // Navigation property for User
+
+        [ValidateNever]
         public ApplicationUser User { get; set; }
     }
 }

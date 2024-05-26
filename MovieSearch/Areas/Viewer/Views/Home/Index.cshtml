@@ -1,51 +1,67 @@
-﻿@model  IEnumerable<MovieSearch.Model.Film>
-<div class="row justify-content-center mb-3">
-    <div class="col-md-8">
-        <form asp-controller="Home" asp-action="Index" class="d-flex">
-            <input type="search" name="searchString" class="form-control me-1 border-primary rounded" placeholder="Search" aria-label="Search">
-            <button type="submit" class="btn btn-primary">
-                <i class="bi bi-search"></i>
-            </button>
-        </form>
+﻿@model IEnumerable<MovieSearch.Model.Film>
+
+<form method="get" asp-controller="Home" asp-action="Index">
+    <div class="row mt-3 justify-content-between align-items-center bg-white shadow-sm rounded p-3">
+        <div class="col-md-5">
+            <div class="input-group">
+                <input type="search" name="searchString" class="form-control border rounded-start" placeholder="Search" aria-label="Search" value="@ViewBag.SearchString">
+                <button type="submit" class="btn btn-primary rounded-end">
+                    <i class="bi bi-search"></i> Search
+                </button>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="row justify-content-end">
+                <div class="col-md-auto">
+                    <label for="genreSelect" class="fs-5">Sort by Genre:</label>
+                    <select id="genreSelect" name="genre" asp-items="@ViewBag.Genres" class="form-select">
+                        <option value="">All Genres</option>
+                    </select>
+                </div>
+                <div class="col-md-auto">
+                    <label for="sortBy" class="fs-5">Sort by Parameters(desc.):</label>
+                    <select id="sortBy" name="sortBy" asp-items="@ViewBag.SortByOptions" class="form-select">
+                        <option value="" disabled="disabled">All Parameters</option>
+                    </select>
+                </div>
+                <div class="col-md-auto">
+                    <label for="countFilmOnPage" class="fs-5">Max shown films:</label>
+                    <input type="number" min="4" max="30" name="countFilmOnPage" id="countFilmOnPage" class="form-control" style="max-width: 100px;" value="@((ViewBag.CountFilmOnPageSelectedValue != null ? ViewBag.CountFilmOnPageSelectedValue : 4))"/>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<div class="row pb-3">
+</form>
+<div class="row pb-3 mt-1">
     @if (Model.Any())
     {
         @foreach (var film in Model)
         {
             <div class="col-lg-3 col-sm-6">
-                <div class="row p-2">
-                    <div class="col-12 p-1">
-                        <div class="card border-0 p-3 shadow border-top border-5 rounded">
-                            <a asp-action="Details"
-                               asp-route-filmId="@film.Id">
-                                <img alt="photo-film" src="https://image.tmdb.org/t/p/w500/@(film.Poster_Path)" class="card-img-top rounded"/>
-                            </a>
-                            <div class="card-body pb-0">
-                                <div>
-                                    @if (film.Vote_Average == 0)
-                                    {
-                                        <p class="card-title">Not voted</p>
-                                    }
-                                    else
-                                    {
-                                        <p class="card-title"><i class="bi bi-star-fill me-2" style="color: red"></i>@film.Vote_Average / 10</p>
-                                    }
-                                </div>
-
-                                <p class="card-title h5 text-primary" style="height: 55px">@film.Title</p>
-                            </div>
-                            <a asp-action="Details"
-                               asp-route-filmId="@film.Id" class="btn opacity-75 btn-primary bg-gradient border-0 form-control">Details</a>
-                        </div>
+                <div class="card border-0 p-3 shadow border-top border-5 rounded h-100">
+                    <a asp-action="Details" asp-route-filmId="@film.Id">
+                        <img alt="photo-film" src="https://image.tmdb.org/t/p/w500/@(film.Poster_Path)" class="card-img-top rounded" />
+                    </a>
+                    <div class="card-body pb-0">
+                        @if (film.Vote_Average == 0)
+                        {
+                            <p class="card-title">Not voted</p>
+                        }
+                        else
+                        {
+                            <p class="card-title"><i class="bi bi-star-fill me-2" style="color: red"></i>@film.Vote_Average / 10</p>
+                        }
+                        <p class="card-title h5 text-primary" style="height: 55px">@film.Title</p>
                     </div>
+                    <a asp-action="Details" asp-route-filmId="@film.Id" class="btn btn-primary bg-gradient border-0 form-control">Details</a>
                 </div>
             </div>
         }
     }
     else
     {
-        <h3>Films with this name don't exist</h3>
+        <div class="col">
+            <h3 class="text-center">Films with this name don't exist</h3>
+        </div>
     }
 </div>

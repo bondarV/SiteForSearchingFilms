@@ -23,7 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Pages\" />
     <Folder Include="Areas\Admin\Views\" />
     <Folder Include="Areas\Viewer\Views\" />
   </ItemGroup>

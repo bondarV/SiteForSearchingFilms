@@ -1,0 +1,64 @@
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.EntityFrameworkCore
+@model MovieSearch.Model.Review
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .add-review:hover {
+        background-color: rgba(1, 1, 1, 0.1);
+    }
+</style>
+
+<div class="container">
+    <div class="row pt-4 align-items-center pb-3 d-flex">
+        <div class="col-10">
+            <h2 class="ps-3 border-start border-5 text-primary">Review</h2>
+        </div>
+    </div>
+
+    <table class="table table-bordered table-striped text-center">
+        <thead>
+            <tr>
+                <th>Name Category</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>Rating</td>
+                    <td>
+                        <div class="d-flex flex-column justify-content-center">
+                            <div class="d-flex justify-content-center">
+                                @for (int i = 0; i < Model.Rating; i++)
+                                {
+                                    <div class="bi bi-star-fill"></div>
+                                }
+                            </div>
+                            <div class="display-6">
+                                @Model.Rating / 10
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Headline</td>
+                    <td>@Model.Headline</td>
+                </tr>
+                <tr>
+                    <td>TextReview</td>
+                    <td>@Model.TextReview</td>
+                </tr>
+                <tr>
+                    <td>SpoilersConsist</td>
+                    <td>@Model.SpoilersConsist</td>
+                </tr>
+               
+        </tbody>
+    </table>
+</div>

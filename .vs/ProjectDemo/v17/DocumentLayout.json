@@ -3,20 +3,84 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{63C10056-8181-4E79-8525-5BF45CD0C758}|MovieSearch.Model\\MovieSearch.Model.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.model\\obj\\debug\\net8.0\\.netcoreapp,version=v8.0.assemblyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C10056-8181-4E79-8525-5BF45CD0C758}|MovieSearch.Model\\MovieSearch.Model.csproj|solutionrelative:moviesearch.model\\obj\\debug\\net8.0\\.netcoreapp,version=v8.0.assemblyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CD26906-DF8B-482F-ACB7-2D68EA41A2DA}|MovieSearch\\MovieSearch.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch\\myclassdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{3CD26906-DF8B-482F-ACB7-2D68EA41A2DA}|MovieSearch\\MovieSearch.csproj|solutionrelative:moviesearch\\myclassdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63C10056-8181-4E79-8525-5BF45CD0C758}|MovieSearch.Model\\MovieSearch.Model.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.model\\models\\film.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C10056-8181-4E79-8525-5BF45CD0C758}|MovieSearch.Model\\MovieSearch.Model.csproj|solutionrelative:moviesearch.model\\models\\film.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CD26906-DF8B-482F-ACB7-2D68EA41A2DA}|MovieSearch\\MovieSearch.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CD26906-DF8B-482F-ACB7-2D68EA41A2DA}|MovieSearch\\MovieSearch.csproj|solutionrelative:moviesearch\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63C10056-8181-4E79-8525-5BF45CD0C758}|MovieSearch.Model\\MovieSearch.Model.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.model\\models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C10056-8181-4E79-8525-5BF45CD0C758}|MovieSearch.Model\\MovieSearch.Model.csproj|solutionrelative:moviesearch.model\\models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.dataaccess\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|solutionrelative:moviesearch.dataaccess\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63C10056-8181-4E79-8525-5BF45CD0C758}|MovieSearch.Model\\MovieSearch.Model.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.model\\obj\\debug\\net8.0\\moviesearch.model.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C10056-8181-4E79-8525-5BF45CD0C758}|MovieSearch.Model\\MovieSearch.Model.csproj|solutionrelative:moviesearch.model\\obj\\debug\\net8.0\\moviesearch.model.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|solutionrelative:moviesearch.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.dataaccess\\repository\\genrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|solutionrelative:moviesearch.dataaccess\\repository\\genrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.dataaccess\\repository\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|solutionrelative:moviesearch.dataaccess\\repository\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.dataaccess\\repository\\irepository\\igenrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|solutionrelative:moviesearch.dataaccess\\repository\\irepository\\igenrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.dataaccess\\repository\\irepository\\ifilmgenrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|solutionrelative:moviesearch.dataaccess\\repository\\irepository\\ifilmgenrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.dataaccess\\repository\\irepository\\ifilmrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|solutionrelative:moviesearch.dataaccess\\repository\\irepository\\ifilmrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.dataaccess\\repository\\irepository\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|solutionrelative:moviesearch.dataaccess\\repository\\irepository\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.dataaccess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|solutionrelative:moviesearch.dataaccess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CD26906-DF8B-482F-ACB7-2D68EA41A2DA}|MovieSearch\\MovieSearch.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch\\areas\\admin\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CD26906-DF8B-482F-ACB7-2D68EA41A2DA}|MovieSearch\\MovieSearch.csproj|solutionrelative:moviesearch\\areas\\admin\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CD26906-DF8B-482F-ACB7-2D68EA41A2DA}|MovieSearch\\MovieSearch.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch\\areas\\admin\\controllers\\filmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CD26906-DF8B-482F-ACB7-2D68EA41A2DA}|MovieSearch\\MovieSearch.csproj|solutionrelative:moviesearch\\areas\\admin\\controllers\\filmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.dataaccess\\repository\\filmrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|solutionrelative:moviesearch.dataaccess\\repository\\filmrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CD26906-DF8B-482F-ACB7-2D68EA41A2DA}|MovieSearch\\MovieSearch.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch\\areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CD26906-DF8B-482F-ACB7-2D68EA41A2DA}|MovieSearch\\MovieSearch.csproj|solutionrelative:moviesearch\\areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CD26906-DF8B-482F-ACB7-2D68EA41A2DA}|MovieSearch\\MovieSearch.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch\\areas\\identity\\pages\\account\\_statusmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CD26906-DF8B-482F-ACB7-2D68EA41A2DA}|MovieSearch\\MovieSearch.csproj|solutionrelative:moviesearch\\areas\\identity\\pages\\account\\_statusmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CD26906-DF8B-482F-ACB7-2D68EA41A2DA}|MovieSearch\\MovieSearch.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch\\areas\\admin\\views\\film\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CD26906-DF8B-482F-ACB7-2D68EA41A2DA}|MovieSearch\\MovieSearch.csproj|solutionrelative:moviesearch\\areas\\admin\\views\\film\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CD26906-DF8B-482F-ACB7-2D68EA41A2DA}|MovieSearch\\MovieSearch.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3CD26906-DF8B-482F-ACB7-2D68EA41A2DA}|MovieSearch\\MovieSearch.csproj|solutionrelative:moviesearch\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.Model\\obj\\Debug\\net8.0\\MovieSearch.Model.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MovieSearch.Model\\obj\\Debug\\net8.0\\MovieSearch.Model.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.Model\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MovieSearch.Model\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
@@ -25,44 +89,12 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.200\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CD26906-DF8B-482F-ACB7-2D68EA41A2DA}|MovieSearch\\MovieSearch.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3CD26906-DF8B-482F-ACB7-2D68EA41A2DA}|MovieSearch\\MovieSearch.csproj|solutionrelative:moviesearch\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63C10056-8181-4E79-8525-5BF45CD0C758}|MovieSearch.Model\\MovieSearch.Model.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.model\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C10056-8181-4E79-8525-5BF45CD0C758}|MovieSearch.Model\\MovieSearch.Model.csproj|solutionrelative:moviesearch.model\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63C10056-8181-4E79-8525-5BF45CD0C758}|MovieSearch.Model\\MovieSearch.Model.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.model\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C10056-8181-4E79-8525-5BF45CD0C758}|MovieSearch.Model\\MovieSearch.Model.csproj|solutionrelative:moviesearch.model\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63C10056-8181-4E79-8525-5BF45CD0C758}|MovieSearch.Model\\MovieSearch.Model.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.model\\models\\filmgenre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63C10056-8181-4E79-8525-5BF45CD0C758}|MovieSearch.Model\\MovieSearch.Model.csproj|solutionrelative:moviesearch.model\\models\\filmgenre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.dataaccess\\repository\\irepository\\ifilmrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|solutionrelative:moviesearch.dataaccess\\repository\\irepository\\ifilmrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.dataaccess\\repository\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|solutionrelative:moviesearch.dataaccess\\repository\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.dataaccess\\moviesearch.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|solutionrelative:moviesearch.dataaccess\\moviesearch.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.dataaccess\\repository\\irepository\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|solutionrelative:moviesearch.dataaccess\\repository\\irepository\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|solutionrelative:moviesearch.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|c:\\users\\user\\desktop\\\u043A\u0443\u0440\u0441\u0430\u0447\\projectdemo\\moviesearch.dataaccess\\repository\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5296D115-12B2-4D47-A31E-E7914B8607CF}|MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj|solutionrelative:moviesearch.dataaccess\\repository\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\Views\\Genre\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -75,6 +107,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\Controllers\\GenreController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MovieSearch\\Controllers\\GenreController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.Model\\Models\\Genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MovieSearch.Model\\Models\\Genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.Model\\Models\\FilmGenre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MovieSearch.Model\\Models\\FilmGenre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.Model\\Models\\ErrorViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MovieSearch.Model\\Models\\ErrorViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.Model\\Models\\Review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MovieSearch.Model\\Models\\Review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.Model\\Models\\Film.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MovieSearch.Model\\Models\\Film.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -84,7 +136,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -92,33 +144,244 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Genre.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.Model\\Models\\Genre.cs",
-              "RelativeDocumentMoniker": "MovieSearch.Model\\Models\\Genre.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.Model\\Models\\Genre.cs",
-              "RelativeToolTip": "MovieSearch.Model\\Models\\Genre.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAPAAAA",
+              "DocumentIndex": 1,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "MovieSearch\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "MovieSearch\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T19:23:04.382Z",
+              "WhenOpened": "2024-05-26T15:31:56.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GenreRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\GenreRepository.cs",
+              "RelativeDocumentMoniker": "MovieSearch.DataAccess\\Repository\\GenreRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\GenreRepository.cs",
+              "RelativeToolTip": "MovieSearch.DataAccess\\Repository\\GenreRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T15:00:13.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyClassDiagram.cd",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\MyClassDiagram.cd",
+              "RelativeDocumentMoniker": "MovieSearch\\MyClassDiagram.cd",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\MyClassDiagram.cd",
+              "RelativeToolTip": "MovieSearch\\MyClassDiagram.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2024-05-26T09:13:08.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IGenreRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\IRepository\\IGenreRepository.cs",
+              "RelativeDocumentMoniker": "MovieSearch.DataAccess\\Repository\\IRepository\\IGenreRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\IRepository\\IGenreRepository.cs",
+              "RelativeToolTip": "MovieSearch.DataAccess\\Repository\\IRepository\\IGenreRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T14:53:48.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IFilmGenreRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\IRepository\\IFilmGenreRepository.cs",
+              "RelativeDocumentMoniker": "MovieSearch.DataAccess\\Repository\\IRepository\\IFilmGenreRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\IRepository\\IFilmGenreRepository.cs",
+              "RelativeToolTip": "MovieSearch.DataAccess\\Repository\\IRepository\\IFilmGenreRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T14:52:23.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{778b5376-ad77-4751-acdc-f3d18343f8dd}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "RelativeDocumentMoniker": "MovieSearch.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "RelativeToolTip": "MovieSearch.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T16:46:45.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IFilmRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\IRepository\\IFilmRepository.cs",
+              "RelativeDocumentMoniker": "MovieSearch.DataAccess\\Repository\\IRepository\\IFilmRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\IRepository\\IFilmRepository.cs",
+              "RelativeToolTip": "MovieSearch.DataAccess\\Repository\\IRepository\\IFilmRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T18:33:29.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "MovieSearch.DataAccess\\Repository\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\UnitOfWork.cs",
+              "RelativeToolTip": "MovieSearch.DataAccess\\Repository\\UnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T14:11:56.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IReviewRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\IRepository\\IReviewRepository.cs",
+              "RelativeDocumentMoniker": "MovieSearch.DataAccess\\Repository\\IRepository\\IReviewRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\IRepository\\IReviewRepository.cs",
+              "RelativeToolTip": "MovieSearch.DataAccess\\Repository\\IRepository\\IReviewRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T17:09:23.167Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "MovieSearch.DataAccess\\Repository\\Repository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\Repository.cs",
+              "RelativeToolTip": "MovieSearch.DataAccess\\Repository\\Repository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T16:46:41.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "MovieSearch.DataAccess\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "MovieSearch.DataAccess\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T14:52:26.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FilmController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\Areas\\Admin\\Controllers\\FilmController.cs",
+              "RelativeDocumentMoniker": "MovieSearch\\Areas\\Admin\\Controllers\\FilmController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\Areas\\Admin\\Controllers\\FilmController.cs",
+              "RelativeToolTip": "MovieSearch\\Areas\\Admin\\Controllers\\FilmController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAiwIgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T09:13:51.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FilmRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\FilmRepository.cs",
+              "RelativeDocumentMoniker": "MovieSearch.DataAccess\\Repository\\FilmRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\FilmRepository.cs",
+              "RelativeToolTip": "MovieSearch.DataAccess\\Repository\\FilmRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T12:07:06.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ExternalLogin.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "RelativeDocumentMoniker": "MovieSearch\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "RelativeToolTip": "MovieSearch\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T12:06:38.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_StatusMessage.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
+              "RelativeDocumentMoniker": "MovieSearch\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
+              "RelativeToolTip": "MovieSearch\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T12:06:19.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\Areas\\Admin\\Views\\Film\\Index.cshtml",
+              "RelativeDocumentMoniker": "MovieSearch\\Areas\\Admin\\Views\\Film\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\Areas\\Admin\\Views\\Film\\Index.cshtml",
+              "RelativeToolTip": "MovieSearch\\Areas\\Admin\\Views\\Film\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T12:05:43.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GenreController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\Areas\\Admin\\Controllers\\GenreController.cs",
+              "RelativeDocumentMoniker": "MovieSearch\\Areas\\Admin\\Controllers\\GenreController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\Areas\\Admin\\Controllers\\GenreController.cs",
+              "RelativeToolTip": "MovieSearch\\Areas\\Admin\\Controllers\\GenreController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T09:13:57.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "MovieSearch.Model.AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.Model\\obj\\Debug\\net8.0\\MovieSearch.Model.AssemblyInfo.cs",
               "RelativeDocumentMoniker": "MovieSearch.Model\\obj\\Debug\\net8.0\\MovieSearch.Model.AssemblyInfo.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.Model\\obj\\Debug\\net8.0\\MovieSearch.Model.AssemblyInfo.cs",
               "RelativeToolTip": "MovieSearch.Model\\obj\\Debug\\net8.0\\MovieSearch.Model.AssemblyInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAdAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAQAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-12T19:21:24.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 21,
               "Title": "Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.200\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
@@ -126,12 +389,11 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.200\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
               "ViewState": "AQIAACAAAAAAAAAAAAAqwDUAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-05-12T19:18:32.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T19:18:32.106Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 19,
               "Title": ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.Model\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "RelativeDocumentMoniker": "MovieSearch.Model\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
@@ -144,12 +406,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\appsettings.json",
               "RelativeDocumentMoniker": "MovieSearch\\appsettings.json",
-              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\appsettings.json*",
-              "RelativeToolTip": "MovieSearch\\appsettings.json*",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\appsettings.json",
+              "RelativeToolTip": "MovieSearch\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-05-12T19:17:49.153Z",
@@ -157,7 +419,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 27,
+              "Title": "Genre.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.Model\\Models\\Genre.cs",
+              "RelativeDocumentMoniker": "MovieSearch.Model\\Models\\Genre.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.Model\\Models\\Genre.cs",
+              "RelativeToolTip": "MovieSearch.Model\\Models\\Genre.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T19:23:04.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -165,24 +439,11 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ViewState": "AQIAAD8JAAAAAAAAAAAqwFQJAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-05-12T19:12:10.797Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T19:12:10.797Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IFilmRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\IRepository\\IFilmRepository.cs",
-              "RelativeDocumentMoniker": "MovieSearch.DataAccess\\Repository\\IRepository\\IFilmRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\IRepository\\IFilmRepository.cs",
-              "RelativeToolTip": "MovieSearch.DataAccess\\Repository\\IRepository\\IFilmRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T18:33:29.113Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 28,
               "Title": "FilmGenre.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.Model\\Models\\FilmGenre.cs",
               "RelativeDocumentMoniker": "MovieSearch.Model\\Models\\FilmGenre.cs",
@@ -194,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 29,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.Model\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "MovieSearch.Model\\Models\\ErrorViewModel.cs",
@@ -206,7 +467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 30,
               "Title": "Review.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.Model\\Models\\Review.cs",
               "RelativeDocumentMoniker": "MovieSearch.Model\\Models\\Review.cs",
@@ -214,12 +475,11 @@
               "RelativeToolTip": "MovieSearch.Model\\Models\\Review.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T18:33:14.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T18:33:14.23Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 31,
               "Title": "Film.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.Model\\Models\\Film.cs",
               "RelativeDocumentMoniker": "MovieSearch.Model\\Models\\Film.cs",
@@ -227,12 +487,11 @@
               "RelativeToolTip": "MovieSearch.Model\\Models\\Film.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAuwA8AAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T18:32:08.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T18:32:08.267Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 23,
               "Title": "MovieSearch.DataAccess.csproj",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj",
               "RelativeDocumentMoniker": "MovieSearch.DataAccess\\MovieSearch.DataAccess.csproj",
@@ -245,7 +504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 22,
               "Title": "ReviewRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\ReviewRepository.cs",
               "RelativeDocumentMoniker": "MovieSearch.DataAccess\\Repository\\ReviewRepository.cs",
@@ -257,43 +516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\IRepository\\IRepository.cs",
-              "RelativeDocumentMoniker": "MovieSearch.DataAccess\\Repository\\IRepository\\IRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\IRepository\\IRepository.cs",
-              "RelativeToolTip": "MovieSearch.DataAccess\\Repository\\IRepository\\IRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T16:46:45.261Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IReviewRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\IRepository\\IReviewRepository.cs",
-              "RelativeDocumentMoniker": "MovieSearch.DataAccess\\Repository\\IRepository\\IReviewRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\IRepository\\IReviewRepository.cs",
-              "RelativeToolTip": "MovieSearch.DataAccess\\Repository\\IRepository\\IReviewRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T17:09:23.167Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\Repository.cs",
-              "RelativeDocumentMoniker": "MovieSearch.DataAccess\\Repository\\Repository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch.DataAccess\\Repository\\Repository.cs",
-              "RelativeToolTip": "MovieSearch.DataAccess\\Repository\\Repository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T16:46:41.011Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\Views\\Genre\\Index.cshtml",
               "RelativeDocumentMoniker": "MovieSearch\\Views\\Genre\\Index.cshtml",
@@ -304,7 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "MovieSearch\\Controllers\\HomeController.cs",
@@ -315,7 +538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "GenreController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\\u041A\u0443\u0440\u0441\u0430\u0447\\ProjectDemo\\MovieSearch\\Controllers\\GenreController.cs",
               "RelativeDocumentMoniker": "MovieSearch\\Controllers\\GenreController.cs",
@@ -323,6 +546,10 @@
               "RelativeToolTip": "MovieSearch\\Controllers\\GenreController.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-04T14:57:11.386Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{68487888-204a-11d3-87eb-00c04f7971a5}"
             },
             {
               "$type": "Bookmark",

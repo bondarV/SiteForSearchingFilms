@@ -26,15 +26,35 @@ namespace MovieSearch.DataAccess.Repository
         {
             dbSet.Add(entity);
         }
-
-        public void Add(Genre entity)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Remove(T entity)
         {
             dbSet.Remove(entity);
+        }
+        public IEnumerable<T> GetAll(string includeProperties = null)
+        {
+            IQueryable<T> query = dbSet;
+            if (!string.IsNullOrEmpty(includeProperties))
+            {
+                foreach (var includeProperty in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProperty);
+                }
+            }
+            return query.ToList();
+        }
+
+        public IEnumerable<T> GetAllByParameters(Expression<Func<T, bool>> filter,string includeProperties = null)
+        {
+            IQueryable<T> query = dbSet;
+            query = query.Where(filter);
+            if (!string.IsNullOrEmpty(includeProperties))
+            {
+                foreach (var includeProperty in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProperty);
+                }
+            }
+            return query.ToList();
         }
 
         public T Get(Expression<Func<T, bool>> filter,string? includeProperties = null)
@@ -51,23 +71,14 @@ namespace MovieSearch.DataAccess.Repository
             }
             return query.FirstOrDefault();
         }
-
-        public IEnumerable<T> GetAll(string? includeProperties = null)
-        {
-            IQueryable<T> query = dbSet;
-            if (!string.IsNullOrEmpty(includeProperties))
-            {
-                foreach (var includeProp in includeProperties.Split(new char[] { ',' },
-                             StringSplitOptions.RemoveEmptyEntries))
-                {
-                    query = query.Include(includeProp);
-                }
-            }
-            return query.ToList();
-        }
         public void RemoveRange(IEnumerable<T> entity)
         {
             dbSet.RemoveRange(entity);
+        }
+
+        public int Count()
+        {
+            return dbSet.Count();
         }
     }
 }

@@ -16,7 +16,7 @@ namespace MovieSearch.DataAccess.Data
         public DbSet<Film> Films { get; set; }
         public DbSet<FilmGenre> FilmGenres { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder) 
         {
             base.OnModelCreating(modelBuilder);
 

@@ -19,6 +19,4 @@ public class FilmRepository :  Repository<Film>, IFilmRepository
         if (obj != null) _db.Films.Update(obj);
     }
     
-
-    
 }

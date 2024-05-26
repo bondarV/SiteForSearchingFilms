@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MovieSearch.DataAccess.Repository.IRepository;
 using MovieSearch.Model;
-using MovieSearch.Utility;
 
 namespace MovieSearch.Areas.Viewer.Controllers
 {
@@ -21,9 +18,31 @@ namespace MovieSearch.Areas.Viewer.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            List<Review> objReviewList = _unitOfWork.Review.GetAll().ToList();
-            return View(objReviewList);
-        } 
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+    
+            // Check if the user is logged in
+            if (userId == null)
+            {
+                return Unauthorized(); // or redirect to login page
+            }
+
+            // Get all reviews for the logged-in user
+            var reviews = _unitOfWork.Review.GetAllByParameters(r => r.UserId == userId, includeProperties: "Film,User");
+
+            // Pass the list of reviews to the view
+            return View(reviews);
+        }
+
+        [HttpGet]
+        public IActionResult Details(int reviewId)
+        {
+            var review = _unitOfWork.Review.Get(r => r.Id == reviewId, includeProperties: "Film,User");
+            if (review == null)
+            {
+                return NotFound();
+            }
+            return View(review);
+        }
         [HttpGet]
         public IActionResult Create(int filmId, string userId)
         {  
@@ -70,17 +89,18 @@ namespace MovieSearch.Areas.Viewer.Controllers
             return View(reviewFromDb);
         }
         
+        
         [HttpPost]
-        public IActionResult Edit(Review obj)
+        public IActionResult Edit(Review review)
         {
             if (ModelState.IsValid)
             {
-                _unitOfWork.Review.Update( obj);
+                _unitOfWork.Review.Update(review);
                 _unitOfWork.Save();
                 TempData["success"] = "Review edited successfully";
                 return RedirectToAction("Index");
             }
-            return View();
+            return View(review);
         }
         public IActionResult Delete(int? id)
         {
